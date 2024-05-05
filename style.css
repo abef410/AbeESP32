@@ -1,0 +1,73 @@
+
+
+@font-face {
+    font-family: "SF_light";
+    src: url(fonts/SF-Pro-Text-Light.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "SF_normal";
+    src: url(fonts/SF-Pro-Text-Regular.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "SF_bold";
+    src: url(fonts/SF-Pro-Text-Bold.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+p {
+    font-family: SF_light;
+
+}
+
+button {
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+    border: none;
+    height: 50px;
+    font-family: SF_bold;
+    
+    
+}
+
+input {
+    color: black;
+    background-color: gainsboro;
+    border-radius: 8px;
+    border: none;
+    height: 50px;
+    font-family: SF_bold;
+    text-align: center;
+}
+
+form {
+    width: 400px; /* Set a width for the form */
+    margin: auto; /* Add margin: auto for centering */
+    border-width: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+h1 {
+    color: gray;
+    text-align: center;
+    font-family: SF_bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 60px;
+    
+}
+
+.line {
+    color: gainsboro;
+    background-color: gainsboro;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 5px;
+    border-radius: 3px;
+}
