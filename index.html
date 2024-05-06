@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Abes ESP32 Control</title>
-        
-        <h1>
-            Abes ESP32 Control
-        </h1>
-            
-        <div class= "line">
-            &nbsp;
-        </div>
+<head>
+    <title>Abe's ESP32 Control</title>
 
-        <div class="form">
-            <form action="main.html" method = "GET">
-                <input type="text" name="test" placeholder="Servo angle... (0-180)">
-                <button type="submit">Move Servo</button>
-            </form>
-        </div>
-      
-        <div class= "line">
-            &nbsp;
-        </div>
-        
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <p>
-            reid is a bot and RBLX does it work?
-        </p>
-    </body>
+    <h1>Abe's ESP32 Control</h1>
+
+    <div class="line">
+        &nbsp;
+    </div>
+
+    <div class="form">
+        <form id="servo-control-form" action="#">
+            <input type="text" id="servo-angle" name="servo_angle" placeholder="Servo Angle (0-180)">
+            <button type="submit">Move Servo</button>
+        </form>
+    </div>
+
+    <div class="line">
+        &nbsp;
+    </div>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "IzaSyC9C_fybrhsk3N8KbXVqyJTgK8KohNre2g",
+        authDomain: "esp32-led-control-c2a2c.com",
+        databaseURL: "https://esp32-led-control-c2a2c.firebaseio.com",
+        projectId: "esp32-led-control-c2a2c",
+        storageBucket: "YOUR_FIREBASE_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_FIREBASE_APP_ID"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <p id="status-message"></p>
+
+    <script src="script.js"></script>  </body>
 </html>
